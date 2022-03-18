@@ -1,0 +1,21 @@
+{
+  "name": "remix-redis-session",
+  "version": "0.0.1",
+  "description": "Redis session storage for Remix",
+  "main": "dist/index.ts",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "author": "Dov Alperin",
+  "repository": "https://github.com/DAlperin/remix-redis-session",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.6.2",
+    "@types/ioredis": "^4.28.8"
+  },
+  "dependencies": {
+    "@remix-run/server-runtime": "^1.3.2",
+    "ioredis": "^4.28.5",
+    "remix": "^1.3.2"
+  }
+}
