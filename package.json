@@ -1,13 +1,10 @@
 {
   "name": "remix-redis-session",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "description": "Redis session storage for Remix",
-  "main": "dist/index.ts",
+  "main": "dist/index.js",
   "files": [
-    "dist/*.js",
-    "dist/*.ts",
-    "dist/**/.ts",
-    "dist/**/.js"
+    "dist/**"
   ],
   "scripts": {
     "build": "npx tsc"

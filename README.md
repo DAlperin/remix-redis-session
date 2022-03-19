@@ -2,6 +2,10 @@
 
 A simple library to use redis as your session backing store in your remix project
 
+## Install
+
+`npm install remix-redis-session` or `npm install remix-redis-session`
+
 ## Api
 
 ```ts
