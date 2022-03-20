@@ -4,7 +4,7 @@ A simple library to use redis as your session backing store in your remix projec
 
 ## Install
 
-`npm install remix-redis-session` or `npm install remix-redis-session`
+`npm install remix-redis-session` or `yarn add remix-redis-session`
 
 ## Api
 
