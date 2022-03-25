@@ -1,7 +1,10 @@
-import { SessionIdStorageStrategy, SessionStorage, createSessionStorage } from "@remix-run/server-runtime/sessions";
-import { randomBytes as crypto_randomBytes } from "crypto";
-import Redis from "ioredis";
+import { SessionIdStorageStrategy, SessionStorage, createSessionStorageFactory } from "@remix-run/server-runtime/sessions";
+import { createCookie } from "@remix-run/node";
 
+
+import { randomBytes as crypto_randomBytes } from "crypto";
+
+import Redis from "ioredis";
 function genRandomID(): string {
     const randomBytes = crypto_randomBytes(8);
     return Buffer.from(randomBytes).toString("hex");
@@ -34,7 +37,7 @@ export function createRedisSessionStorage({
     } else {
         throw new Error("Need to provide either options.RedisConfig or options.redisClient")
     }
-
+    const createSessionStorage = createSessionStorageFactory(createCookie)
     return createSessionStorage({
         cookie,
         async createData(data, expires) {
