@@ -1,4 +1,4 @@
-import { SessionIdStorageStrategy, SessionStorage, createSessionStorageFactory } from "@remix-run/server-runtime/sessions";
+import { SessionIdStorageStrategy, SessionStorage, createSessionStorageFactory } from "@remix-run/server-runtime";
 import { createCookie } from "@remix-run/node";
 
 
