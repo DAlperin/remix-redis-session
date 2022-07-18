@@ -1,6 +1,6 @@
 {
   "name": "remix-redis-session",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Redis session storage for Remix",
   "main": "dist/index.js",
   "files": [
