@@ -13,7 +13,7 @@ function genRandomID(): string {
 const expiresToSeconds = (expires: Date) => {
     const now = new Date();
     const expiresDate = new Date(expires);
-    const secondsDelta = (expiresDate.getTime() - now.getTime())/1000;
+    const secondsDelta = Math.round((expiresDate.getTime() - now.getTime())/1000);
     return secondsDelta < 0 ? 0 : secondsDelta;
 };
 
